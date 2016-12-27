@@ -186,7 +186,7 @@ export default class TestMapView extends Component {
                         longitude: longitude,
                         title: title,
                         id: id,
-                        image:require('image!HDetailMapHotel'),
+                        image:(<View style={{width:44,height:44}} backgroundColor='red'></View>),
                         subtitle: subTitle,
                         rightCalloutView:(<View style={{width:44,height:44}} backgroundColor='red'></View>),
                         onRightCalloutPress:this._clickItem,
