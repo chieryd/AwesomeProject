@@ -189,7 +189,6 @@ export default class TestMapView extends Component {
                         image:require('image!HDetailMapHotel'),
                         subtitle: subTitle,
                         rightCalloutView:(<View style={{width:44,height:44}} backgroundColor='red'></View>),
-                        onRightCalloutPress:this._calloutpress.bind(this),
                         onRightCalloutPress:this._clickItem,
                     };
                 }
@@ -307,7 +306,7 @@ export default class TestMapView extends Component {
     }
 
     _clickItem(annotation:string) {
-
+        cosole.log("右边的按钮现在正在被点击")
     }
 
     _onRegionChange() {
